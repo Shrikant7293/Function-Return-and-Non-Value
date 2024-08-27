@@ -14,6 +14,7 @@ namespace Function_Return_and_Non_Value
         public int IncomeTax {  get; set; }
 		public int NetIncome {  get; set; }
 
+		// Non Returing Value
 		public void GetData()
 		{
 			Console.WriteLine("Enter Id");
@@ -40,6 +41,8 @@ namespace Function_Return_and_Non_Value
 			Console.WriteLine("NetIncome = " + NetIncome);
 		}
 
+
+		// Returing Value
 		public int CalculateNetIncome()
 		{
 			NetIncome = GrossIncome - IncomeTax;
